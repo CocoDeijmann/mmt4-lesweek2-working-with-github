@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header id="menubalk">
+        <nav>
+            <ul>
+                <li><a href="#"id="blackHeading">COLOR</a></li>
+                <li><a href="#"id="fontHeading">FONT</a></li>
+                <li><a href="#"id="beepHeading">BEEP</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <header id="artikel_header">
+                <h2>MATT CORBY</h2>
+            </header>
+
+            <p>My money's in that office, right? If she start giving me some <span>bullshit</span> about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. <br> <br> Then I'm gonna shoot that <span>bitch</span> in the kneecaps, find out where my <span>goddamn</span> money is. She gonna tell me too. <br> Hey, look at me when I'm talking to you, <span>motherfucker</span>. 
+                 <br> <br>   Jackie Brown (1997) 
+            </p>
+
+            <div class="poster">
+                <img src="/img/mattcorby.jpeg" alt="Matt Corby">
+            </div>
+                
+            <div class="poster background"></div>
+            
+            <footer id="artikel_footer">
+                <p>Idem dito, Carpe diem.</p>
+            </footer>
+        </article>
+
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script>
+        var fontColor = '#000';
+        var fontFamily= 'Comic sans MS';
+ 
+        $( document ).ready(function() {
+    
+            $('#blackHeading').click(function(){
+            $('h2').css({'color':fontColor});
+            });	
+
+            $('#fontHeading').click(function(){
+            $('p').css({'font-family': fontFamily});
+            });	
+
+            $('#beepHeading').click(function(){
+            //$("span").replaceWith("*beep*");
+            $('span').text("*beep*");
+            $('span').css({"text-decoration":"none"});
+            });	
+
+        });
+    </script>
+
+
+</body>
+
+</html>
